@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharun Thandesh | AI/ML Engineer & Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Dharun Thandesh — AI/ML Engineering Student, Full Stack Developer, and Tech Enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>AI/ML ENGINEER &bull; FULL STACK DEVELOPER &bull; TECH ENTHUSIAST &bull; PROBLEM SOLVER &bull; HACKATHON WARRIOR &bull;&nbsp;</span>
+        <span>AI/ML ENGINEER &bull; FULL STACK DEVELOPER &bull; TECH ENTHUSIAST &bull; PROBLEM SOLVER &bull; HACKATHON WARRIOR &bull;&nbsp;</span>
+      </div>
+    </div>
+    <div class="loader-pill">
+      <span class="pill-label">LOADING</span>
+      <div class="pill-track"><div class="pill-fill" id="pillFill"></div></div>
+      <span class="pill-pct" id="pillPct">0%</span>
+    </div>
+  </div>
+
+  <!-- ========== SITE WRAPPER ========== -->
+  <div id="site" class="hidden">
+
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="nav-logo">DT</div>
+      <div class="nav-email">dharunthandesh4@gmail.com</div>
+      <div class="nav-links">
+        <a href="#about-section" class="nl">ABOUT</a>
+        <a href="#skills-section" class="nl">SKILLS</a>
+        <a href="#contact-section" class="nl">CONTACT</a>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero-section">
+      <div class="orb orb-tl"></div>
+      <div class="orb orb-br"></div>
+
+      <div class="hero-left" id="heroLeft">
+        <p class="h-greet">Hello! I'm</p>
+        <h1 class="h-name">
+          <span class="nm">DHARUN</span>
+          <span class="nm">THANDESH</span>
+        </h1>
+      </div>
+
+      <div class="hero-center" id="heroCenter">
+        <div class="av-wrap" id="avWrap">
+          <div class="av-glow"></div>
+          <img src="assets/avatar-hero.png" id="avImg" class="av-img" alt="Dharun Thandesh 3D Avatar" />
+          <div class="av-base"></div>
+        </div>
+      </div>
+
+      <div class="hero-right" id="heroRight">
+        <p class="h-sub">An</p>
+        <h2 class="h-role">
+          <span class="rt">AI/ML</span>
+          <span class="rb">ENGINEER</span>
+        </h2>
+      </div>
+
+      <!-- ABOUT PANEL — hidden initially, fades in on scroll -->
+      <div id="aboutPanel">
+        <p class="eyebrow">ABOUT ME</p>
+        <p class="about-body">
+          I am a Computer Science Engineering student specializing in <strong>AI/ML</strong> with a strong interest in building impactful tech solutions. I enjoy working on full-stack development, AI-based projects, and innovative ideas. I actively participate in <strong>hackathons</strong> and continuously explore new technologies to improve my skills.
+        </p>
+        <div class="stats-row">
+          <div class="stat"><span class="sn" data-n="10">0</span><span class="sp">+</span><span class="sl">Projects</span></div>
+          <div class="stat"><span class="sn" data-n="5">0</span><span class="sp">+</span><span class="sl">Hackathons</span></div>
+          <div class="stat"><span class="sn" data-n="8">0</span><span class="sp">+</span><span class="sl">Skills</span></div>
+        </div>
+      </div>
+
+      <a href="#" class="resume-btn" id="resumeBtn">RESUME ↗</a>
+      <div class="scroll-cue" id="scrollCue">
+        <div class="sc-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </section>
+
+    <!-- invisible anchor for nav -->
+    <span id="about-section" style="display:block;height:0;"></span>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills-section">
+      <div class="sk-left" id="skLeft">
+        <img src="assets/avatar-desk.png" class="desk-av" id="deskAv" alt="Dharun at desk" />
+        <h2 class="wit">WHAT<br>I DO</h2>
+      </div>
+      <div class="sk-right" id="skRight">
+        <div class="sk-card" id="sc0">
+          <div class="sk-head"><span class="sk-ico">🤖</span><h3>AI / ML ENGINEERING</h3><div class="chk">✓</div></div>
+          <p>Building intelligent systems with Python, ML models, and data-driven AI solutions.</p>
+          <div class="tags"><span>Python</span><span>AI/ML</span><span>Data Science</span></div>
+        </div>
+        <div class="sk-card" id="sc1">
+          <div class="sk-head"><span class="sk-ico">🌐</span><h3>FULL STACK DEVELOPMENT</h3><div class="chk">✓</div></div>
+          <p>Crafting performant, responsive web applications with modern tech stacks.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>REST APIs</span></div>
+        </div>
+        <div class="sk-card" id="sc2">
+          <div class="sk-head"><span class="sk-ico">⚡</span><h3>DSA & PROBLEM SOLVING</h3><div class="chk">✓</div></div>
+          <p>Strong foundations in Data Structures & Algorithms for efficient, scalable solutions.</p>
+          <div class="tags"><span>DSA</span><span>Algorithms</span></div>
+        </div>
+        <div class="sk-card" id="sc3">
+          <div class="sk-head"><span class="sk-ico">🔧</span><h3>VERSION CONTROL & APIs</h3><div class="chk">✓</div></div>
+          <p>Professional Git & GitHub workflow with REST API design and integration.</p>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>REST APIs</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact-section">
+      <div class="ct-inner" id="ctInner">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2 class="ct-title">LET'S <em>BUILD</em><br>SOMETHING GREAT</h2>
+        <p class="ct-sub">Open for collaborations, hackathons, or just a great tech conversation!</p>
+        <div class="ct-btns">
+          <a href="mailto:dharunthandesh4@gmail.com" class="cta primary">
+            <span>SEND EMAIL</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/dharun-thandesh-429ab9375/" target="_blank" rel="noopener" class="cta secondary">
+            <span>LINKEDIN</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="ct-bg-word">CONNECT</div>
+      <div class="footer-bar">
+        <span>© 2026 Dharun Thandesh</span>
+        <span>All Rights Reserved</span>
+      </div>
+    </section>
+
+  </div><!-- /#site -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
