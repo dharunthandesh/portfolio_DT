@@ -152,6 +152,17 @@ function initScrollAnimations() {
     }
   });
 
+  /* ── PROJECTS SECTION ── */
+  ScrollTrigger.create({
+    trigger: '#projects-section',
+    start: 'top 75%',
+    once: true,
+    onEnter: () => {
+      gsap.to('#projHead', { opacity:1, y:0, duration:1, ease:'power3.out' });
+      gsap.to('.proj-card', { opacity:1, y:0, duration:.8, stagger:.15, delay:.2, ease:'power3.out' });
+    }
+  });
+
   /* ── CONTACT ── */
   ScrollTrigger.create({
     trigger: '#contact-section',
@@ -176,9 +187,9 @@ function animateCounters() {
 }
 
 /* ══════════════════════════════════════
-   SKILL CARD TILT (mouse enter)
+   CARD TILT (mouse enter)
 ══════════════════════════════════════ */
-document.querySelectorAll('.sk-card').forEach(card => {
+document.querySelectorAll('.sk-card, .proj-card').forEach(card => {
   card.addEventListener('mousemove', e => {
     const r = card.getBoundingClientRect();
     const x = ((e.clientX - r.left) / r.width  - .5) * 10;
